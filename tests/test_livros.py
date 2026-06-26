@@ -1,6 +1,6 @@
 import pytest
 from fastapi.testclient import TestClient
-from app.main import app, _db, _next_id
+from app.main import app, _db
 
 
 @pytest.fixture(autouse=True)
