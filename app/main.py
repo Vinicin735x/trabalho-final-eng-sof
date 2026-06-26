@@ -19,7 +19,7 @@ def startup():
 
 
 # ── CREATE ──────────────────────────────────────────────────────────────────
-@app.post("/livros", response_model=Livro, status_code=201)
+@app.post("/livros", response_model=Livro, status_code=200)
 def criar_livro(dados: LivroCreate):
     global _next_id
     livro = Livro(id=_next_id, **dados.model_dump())
